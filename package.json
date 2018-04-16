@@ -1,0 +1,30 @@
+{
+  "name": "node-files",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm-run-all test:js",
+    "test:js": "globstar jshint *.js",
+    "init-project": "npm install && touch index.js",
+    "build": "npm-run-all test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peterpid/node-files.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peterpid/node-files/issues"
+  },
+  "homepage": "https://github.com/peterpid/node-files#readme",
+  "devDependencies": {
+    "globstar": "^1.0.0",
+    "jshint": "^2.9.5",
+    "npm-run-all": "^4.1.2",
+    "onchange": "^3.3.0",
+    "rimraf": "^2.6.2"
+  }
+}
